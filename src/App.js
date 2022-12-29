@@ -1,9 +1,12 @@
-
-import "./App.css";
 import Home from "./components/home/home";
+import DataProvider from "./components/Context/DataContext";
 
 function App() {
-  return <Home />;
+  return (
+    <DataProvider>
+  <Home />
+  </DataProvider>
+  );
 }
 
 

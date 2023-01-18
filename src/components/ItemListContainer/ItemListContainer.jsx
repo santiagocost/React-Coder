@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Title from "../Title/title";
+import { pedirDatos } from "../../helpers/pedirDatos";
+import ItemList from "../ItemList/ItemList";
 
-export const ItemListContainer = (props) => {
-  return <Title greeting = {props.texto}/>;
+const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    pedirDatos()
+      .then((res) => {
+        setProductos(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  return (
+<div>
+  <ItemList productos={productos}/>
+</div>
+  );
 };
 
 export default ItemListContainer;

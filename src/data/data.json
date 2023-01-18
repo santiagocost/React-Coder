@@ -1,0 +1,33 @@
+[ 
+    {
+        "id": 1,
+        "name": "God of War Ragnarok",
+        "precio": "70",
+        "img": "../img/gow.jpg",
+        "descr": "Juego de aventuras, lo último del fantasma de Esparta en tierras nórdicas"
+    },
+
+    {
+        "id": 2,
+        "name": "Hogwarts Legacy",
+        "precio": "70",
+        "img": "../img/hogwarts.jpg",
+        "descr": "Mundo abierto, recorre con total libertad las maravillas y secretos de Hogwarts"      
+    },
+
+    {
+        "id": 3,
+        "name": "Resident Evil 4",
+        "precio": "70",
+        "img": "../img/resident-evil4.jpg",
+        "descr": "Survival Horror, el remake más esperado de la saga Resident Evil"  
+    },
+
+    {
+        "id": 4,
+        "name": "The Callisto Protocol",
+        "precio": "70",
+        "img": "../img/callisto.jpg",
+        "descr": "Survival Horror, no es Dead Space pero casi"  
+    }
+]
